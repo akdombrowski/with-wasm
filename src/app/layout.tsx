@@ -27,16 +27,15 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "Anthony Dombrowski's Portfolio",
-  description:
-    "Professional Resume Portfolio and Content Library for Anthony Dombrowski. Product Manager and Developer Advocate. ",
+  title: "Anthony Dombrowski's spruceid test",
+  description: "Anthony Dombrowski's spruceid test. ",
 };
 
 export default function RootLayout(props: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/anthonyProfilesq/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
         {/* <AppRouterCacheProvider options={{ enableCssLayer: true }}> */}
