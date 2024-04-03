@@ -1,7 +1,9 @@
 {
   "name": "with-wasm",
+  "author": "Anthony Dombrowski",
   "homepage": "https://github.com/akdombrowski/with-wasm",
   "repository": "https://github.com/akdombrowski/with-wasm",
+  "version": "0.0.1",
   "scripts": {
     "dev": "next",
     "build": "next build",
