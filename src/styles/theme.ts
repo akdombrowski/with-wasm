@@ -23,8 +23,6 @@ declare module "@mui/material/Typography" {
 }
 
 declare module "@mui/material/styles" {
-
-
   interface TypographyVariants {
     appBarTitle: CSSProperties & TypographyStyleOptions;
     appBarText: CSSProperties & TypographyStyleOptions;
@@ -98,17 +96,6 @@ declare module "@mui/material/Button" {
  *
  */
 const modifyDefaultsTheme = createTheme({
-  breakpoints: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
-      fhd: 1920,
-      uhd: 3840,
-    },
-  },
-
   palette: {
     mode: "dark",
     primary: {

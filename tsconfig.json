@@ -23,7 +23,9 @@
     "paths": {
       "@/src/*": ["src/*"],
       "@/app/*": ["src/app/*"],
-      "@/components/*": ["src/components/*"]
+      "@/components/*": ["src/components/*"],
+      "@/rust/*": ["src/rust/*"],
+      "@/styles/*": ["src/styles/*"]
     }
   },
   "include": [

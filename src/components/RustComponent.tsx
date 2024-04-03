@@ -1,6 +1,10 @@
-export async function RustServerComponent({ number }: { number: number }) {
-  const exports = await import("../../add.wasm");
-  const { add_one: addOne } = exports;
+import "server-only";
 
-  return <>{addOne(number)}</>;
+import Typography from "@mui/material/Typography";
+
+const exports = await import("@/rust/add.wasm");
+const { add_one: addOne } = exports;
+
+export default function RSC({ number }: { number: number }) {
+  return <Typography variant="body">{addOne(number)}</Typography>;
 }

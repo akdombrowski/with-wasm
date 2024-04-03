@@ -13,14 +13,11 @@ import "@fontsource/roboto/package.json";
 /**
  *  Styling for MUI components using theme
  */
-import theme from "@/styles";
+import theme from "@/src/styles";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 // nextjs optimization
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
-
-import AppAppBar from "@/components/appbar/AppAppBar";
-import Toolbar from "@mui/material/Toolbar";
 
 // vercel site performance and analytics
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -38,13 +35,9 @@ export default function RootLayout(props: { children: ReactNode }) {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
-        {/* <AppRouterCacheProvider options={{ enableCssLayer: true }}> */}
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-            <AppAppBar />
-            <Toolbar variant="dense" sx={{ minHeight: 45 }} />
             {props.children}
             <SpeedInsights />
             <Analytics />
