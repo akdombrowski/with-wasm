@@ -9,7 +9,13 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "latest",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.12",
+    "@mui/material": "^5.15.14",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/speed-insights": "^1.0.10",
+    "next": "^14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

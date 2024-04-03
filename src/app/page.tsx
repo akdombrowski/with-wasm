@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RustServerComponent } from "../components/RustComponent";
+import { RustServerComponent } from "@/components/RustComponent";
 
 export default function Page({
   searchParams,
